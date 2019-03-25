@@ -37,9 +37,14 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'PMB', 'url' => ['/penerimaan/index']],
+        ['label' => 'Kemahasiswaan', 'url' => ['/kemahasiswaan/index']],
+        ['label' => 'Prodi', 'url' => ['/prodi/index']],
+        ['label' => 'Mahasiswa', 'url' => ['/silmi/index']],
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
-        ['label' => 'Mahasiswa', 'url' => ['/silmi/index']],
+        ['label' => 'Adi', 'url' => ['/adi/index']],
+
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
